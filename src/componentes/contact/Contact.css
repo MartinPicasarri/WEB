@@ -1,0 +1,177 @@
+.contact {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.nav-step-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-step-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    letter-spacing: 2px;
+}
+
+.contact p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.area {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.areauno, .areados {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.areauno {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-30px);
+}
+
+.areados {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(30px);
+}
+
+.areauno.animate-left, .areados.animate-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.areauno h4, .areados h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.areauno ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.areauno li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.areauno svg {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.areados form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.mensaje {
+    height: 120px;
+    resize: none;
+}
+
+.enviar {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+    align-self: center;
+}
+
+.enviar:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.error { color: #d9534f; font-size: 0.8rem; margin-top: -10px; margin-bottom: 10px; }
+.success-message { color: #5cb85c; margin-top: 15px; font-weight: 500; }
+.error-message { color: #d9534f; margin-top: 15px; }
+
+@media (max-width: 850px) {
+    .area { flex-direction: column; align-items: center; }
+    .areauno, .areados { width: 90%; transform: none; }
+}
