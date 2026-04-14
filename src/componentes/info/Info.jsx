@@ -5,12 +5,12 @@ function Info({ setSeccionActual }) {
     return (
         <div className='info-container'>
             <div className='info-card'>
-                <div className="info-img-section">
+                {/*<div className="info-img-section">
                     <img 
                         src="https://res.cloudinary.com/dkymtbe7c/image/upload/v1747425494/Placeholder-_-Glossary_hir78d.svg" 
                         alt="Martin Picasarri" 
                     />
-                </div>
+                </div>*/}
 
                 <div className="info-text-section">
                     <div className="info-profile">
