@@ -63,3 +63,9 @@
 .navbar-vertical:hover .nav-text {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .navbar-vertical {
+    background: none;
+  }
+}
